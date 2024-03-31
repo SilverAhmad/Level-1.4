@@ -92,29 +92,37 @@ This Java project focuses on creating an Attendance with Grade System program to
    - Prompt users to input grades for the semester (out of 5).
 
 3. **Success/Failure Determination:**
-   - Calculate average attendance across subjects and determine if it meets the minimum requirement.
-   - Determine if the grade is above 3.5 to determine student success or failure.
+   - Calculate attendance across subjects and determine if it meets the minimum requirement.
+   - Determine if the grade is above 3.5 (student success), below 3.5, or 3.5 (student failure).
 
 4. **User Interaction:**
-   - Implement a user-friendly interface to input attendance, grades, and excuses of absence.
+   - Implement a user-friendly interface to input attendance, grades, and excuses for absence.
    - Provide clear output indicating whether the student passes or fails.
+5. **minimum attendance day**
+   - math classes should be attended 44 days out of 50
+   - physics classes should be attended 42 days out of 50
+   - chemistry classes should be attended 40 days out of 50
+   - programming classes should be attended 47 days out of 50
+6. **excuse for absence**
+   add to the program the option of the excuse of absence if the input contains the word hospital increases one absence from each class.
 
 ### Example Interaction
 ```Welcome to the Attendance and Grade System!
 Enter student name: John Doe
-Mark attendance for each subject (Enter 'hospital' for excuse of absence):
-Math: 
-Physics: hospital
-Chemistry: 
-Programming: 
+Enter the attendance for each subject:
+Math: 43
+Physics: 41
+Chemistry: 39
+Programming: 46
+Mark attendance for each subject (Enter excuse of absence): Went to hospital for a check-up
 Enter grade for the semester (out of 5): 4.2
 
 Student Information:
 Name: John Doe
-Math Attendance: 45 days
+Math Attendance: 44 days
 Physics Attendance: 42 days
 Chemistry Attendance: 40 days
-Programming Attendance: 46 days
+Programming Attendance: 47 days
 Grade: 4.2
 
 Result: Success
